@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ═══ SEO Meta ═══════════════════════════════════════════ -->
+  <title>Spark Doc Electric | Licensed Electrician in Olathe & Kansas City, KS</title>
+  <meta name="description" content="Spark Doc Electric — licensed, insured electrician serving Olathe, Overland Park, Leawood, Shawnee & the Kansas City metro. Panel upgrades, EV chargers, rewiring, lighting & more. Call or text (913) 390-3780." />
+  <meta name="keywords" content="electrician Olathe KS, electrician Kansas City, licensed electrician, panel upgrade, EV charger installation, electrical rewiring, residential electrician, Spark Doc Electric" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sparkdocelectrickc.com/" />
+
+  <!-- ═══ Open Graph ══════════════════════════════════════════ -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:title"       content="Spark Doc Electric | Licensed Electrician in Olathe & Kansas City, KS" />
+  <meta property="og:description" content="Fast, reliable electrical services for Kansas City homeowners. Panel upgrades, EV chargers, rewiring & more. Licensed & insured. Call or text (913) 390-3780." />
+  <meta property="og:url"         content="https://www.sparkdocelectrickc.com/" />
+  <meta property="og:site_name"   content="Spark Doc Electric" />
+  <!-- TODO: Add og:image once logo/hero image is available -->
+
+  <!-- ═══ Twitter Card ════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="Spark Doc Electric | Licensed Electrician — Olathe & Kansas City KS" />
+  <meta name="twitter:description" content="Licensed & insured electrician serving the Kansas City metro. Call or text (913) 390-3780. 24/7 emergency service." />
+
+  <!-- ═══ Schema.org Structured Data ═════════════════════════ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Spark Doc Electric",
+    "url": "https://www.sparkdocelectrickc.com",
+    "telephone": "+19133903780",
+    "email": "",
+    "description": "Licensed and insured residential electrician serving Olathe, Overland Park, Leawood, Prairie Village, Shawnee, Lenexa, Mission KS, and the greater Kansas City metro area.",
+    "areaServed": [
+      "Olathe, KS", "Overland Park, KS", "Leawood, KS",
+      "Prairie Village, KS", "Shawnee, KS", "Lenexa, KS",
+      "Mission, KS", "Kansas City, MO"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2024 S Downing St",
+      "addressLocality": "Olathe",
+      "addressRegion": "KS",
+      "postalCode": "66062",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.8814,
+      "longitude": -94.8191
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "00:00",
+      "closes": "23:59"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Electrical Services",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Panel Upgrades & Breaker Box"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "EV Charger Installation"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Rewiring"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lighting Installation"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GFCI Outlets"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dedicated Circuits"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Whole-Home Surge Protection"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Safety Inspections"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "24/7 Emergency Electrical"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Troubleshooting & Repairs"}}
+      ]
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "24"
+    }
+  }
+  </script>
+
+  <!-- ═══ Fonts ════════════════════════════════════════════════ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- ═══ Stylesheet ══════════════════════════════════════════ -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FLOATING CALL BUTTON (mobile only — hides when hero visible)
+  ═══════════════════════════════════════════════════════════════ -->
+  <a id="float-cta" href="tel:9133903780" aria-label="Call Spark Doc Electric">
+    <!-- Phone icon -->
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call or Text (913) 390-3780
+  </a>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════════════════════════ -->
+  <header id="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="#hero" class="logo" aria-label="Spark Doc Electric — Home">
+          <!--
+            LOGO: Replace the text below with an <img> tag once you have the logo file.
+            Example: <img src="images/logo.png" alt="Spark Doc Electric" class="logo-img" />
+            You can grab the logo from johomeelectric.com via your browser > right-click > Save Image As.
+          -->
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+            <rect width="32" height="32" rx="6" fill="#CC1F1F"/>
+            <path d="M18 4L8 18h8l-2 10 12-14h-8l2-10z" fill="#fff"/>
+          </svg>
+          <span class="logo-text"><span>Spark Doc</span> Electric</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="#services">Services</a>
+          <a href="#why">About</a>
+          <a href="#areas">Areas</a>
+          <a href="#reviews">Reviews</a>
+        </nav>
+
+        <!-- Header CTA -->
+        <div class="header-cta">
+          <a href="tel:9133903780" class="header-phone" aria-label="Call (913) 390-3780">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span class="phone-label">Call or Text&nbsp;</span>
+            <span class="phone-number">(913) 390-3780</span>
+          </a>
+          <!--
+            BOOK ONLINE BUTTON:
+            Replace href="#book" with your Housecall Pro booking URL.
+            Find it in HCP: Settings → Online Booking → Copy Link
+          -->
+          <a href="#book" class="btn btn-primary" style="padding: 10px 20px; font-size: 0.9rem;">Book Online</a>
+        </div>
+
+        <!-- Hamburger (mobile) -->
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#services">Services</a>
+      <a href="#why">About Us</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#reviews">Reviews</a>
+      <div class="mobile-cta-row">
+        <a href="tel:9133903780" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call / Text
+        </a>
+        <!-- Replace href="#book" with your HCP booking link -->
+        <a href="#book" class="btn btn-outline-red">Book Online</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HERO
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="hero" aria-label="Hero">
+      <div class="container">
+        <div class="hero-inner">
+
+          <!-- Left: Copy & CTAs -->
+          <div class="hero-content">
+            <div class="hero-eyebrow">
+              <svg width="12" height="12" viewBox="0 0 32 32" fill="currentColor" aria-hidden="true"><path d="M18 4L8 18h8l-2 10 12-14h-8l2-10z"/></svg>
+              Olathe &amp; Kansas City's Trusted Electrician
+            </div>
+            <h1 class="hero-title">
+              Electrical Done <em>Right</em>.<br/>Done <em>Fast</em>.
+            </h1>
+            <p class="hero-subtitle">
+              Licensed, insured, and ready to tackle any electrical project — from panel upgrades and EV chargers to rewiring and emergency repairs. Serving the Kansas City metro since day one.
+            </p>
+            <div class="hero-ctas">
+              <a href="tel:9133903780" class="btn btn-primary btn-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Call or Text Now
+              </a>
+              <!--
+                BOOK ONLINE: Replace href="#book" with your Housecall Pro booking URL.
+              -->
+              <a href="#book" class="btn btn-outline-white btn-lg">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                Book an Appointment
+              </a>
+            </div>
+            <div class="hero-trust">
+              <div class="trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Licensed &amp; Insured
+              </div>
+              <div class="trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                5-Year Labor Warranty
+              </div>
+              <div class="trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                24/7 Emergency Service
+              </div>
+              <div class="trust-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+                Transparent Pricing
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Highlight Cards -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-card">
+              <div class="hero-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="16 2 12 7 8 2"/></svg>
+              </div>
+              <div class="hero-card-text">
+                <strong>Panel Upgrades</strong>
+                <span>Safe, code-compliant breaker box upgrades</span>
+              </div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="15" height="13" rx="1"/><path d="M16 10h2a2 2 0 012 2v3a2 2 0 01-2 2h-2"/><path d="M12 15l-3-3 3-3"/></svg>
+              </div>
+              <div class="hero-card-text">
+                <strong>EV Charger Installation</strong>
+                <span>Level 2 home charging — fast &amp; reliable</span>
+              </div>
+            </div>
+            <div class="hero-card">
+              <div class="hero-card-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+              </div>
+              <div class="hero-card-text">
+                <strong>Same-Day &amp; Next-Day Available</strong>
+                <span>We move fast so you're not left waiting</span>
+              </div>
+            </div>
+            <div class="hero-emergency">
+              <p>⚡ Electrical Emergency?</p>
+              <a href="tel:9133903780">(913) 390-3780</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         TRUST BAR
+    ═══════════════════════════════════════════════════════════════ -->
+    <div id="trust-bar" role="complementary" aria-label="Trust indicators">
+      <div class="container">
+        <div class="trust-bar-inner">
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Licensed &amp; Insured
+          </div>
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+            5-Year Labor Warranty
+          </div>
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            24/7 Emergency Service
+          </div>
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+            Transparent Pricing
+          </div>
+          <div class="trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+            Locally Owned &amp; Operated
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SERVICES
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="services" class="section" aria-labelledby="services-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">What We Do</span>
+          <h2 id="services-heading" class="section-title">Electrical Services for Every Need</h2>
+          <p class="section-sub">From quick repairs to full-home rewires, Spark Doc Electric handles it all — on time and to code.</p>
+        </header>
+
+        <div class="services-grid">
+
+          <!-- 1 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="15" rx="2"/><polyline points="16 2 12 7 8 2"/></svg>
+            </div>
+            <h3>Panel Upgrades &amp; Breaker Box</h3>
+            <p>Outdated or overloaded panel? We handle safe, code-compliant upgrades that protect your home and support modern electrical loads.</p>
+          </article>
+
+          <!-- 2 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="6" width="15" height="13" rx="1"/><path d="M16 10h2a2 2 0 012 2v3a2 2 0 01-2 2h-2"/><path d="M12 15l-3-3 3-3"/></svg>
+            </div>
+            <h3>EV Charger Installation</h3>
+            <p>Charge your electric vehicle at home with a Level 2 charger. We handle the wiring, dedicated circuit, and installation — fast.</p>
+          </article>
+
+          <!-- 3 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v7a6 6 0 006 6 6 6 0 006-6V3"/><line x1="4" y1="21" x2="20" y2="21"/></svg>
+            </div>
+            <h3>Electrical Wiring &amp; Rewiring</h3>
+            <p>From new construction wiring to complete rewires of older homes, we bring your system up to modern safety standards.</p>
+          </article>
+
+          <!-- 4 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+            </div>
+            <h3>Lighting Installation</h3>
+            <p>Recessed lighting, ceiling fans, outdoor fixtures, and smart lighting solutions installed cleanly and professionally.</p>
+          </article>
+
+          <!-- 5 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+            </div>
+            <h3>GFCI Outlets &amp; Outlet Repair</h3>
+            <p>Protect your family with GFCI outlets in kitchens, bathrooms, and outdoor areas. We also fix dead or faulty outlets quickly.</p>
+          </article>
+
+          <!-- 6 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <h3>Dedicated Circuits</h3>
+            <p>High-demand appliances need their own circuit. We install dedicated circuits for home offices, hot tubs, HVAC, and more.</p>
+          </article>
+
+          <!-- 7 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Whole-Home Surge Protection</h3>
+            <p>One power surge can destroy thousands in electronics. A whole-home surge protector safeguards everything in your home.</p>
+          </article>
+
+          <!-- 8 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/></svg>
+            </div>
+            <h3>Safety Inspections</h3>
+            <p>Buying a home or worried about aging wiring? Our thorough electrical safety inspections give you peace of mind and a clear action plan.</p>
+          </article>
+
+          <!-- 9 -->
+          <article class="service-card reveal">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </div>
+            <h3>Troubleshooting &amp; Repairs</h3>
+            <p>Flickering lights, tripped breakers, mysterious outages — we diagnose and fix electrical problems fast, same day when possible.</p>
+          </article>
+
+        </div>
+
+        <div class="reveal" style="text-align:center; margin-top: 44px;">
+          <p style="color: var(--silver); margin-bottom: 20px; font-size: 1rem;">Not sure if we cover your project? Just ask — we handle it all.</p>
+          <div style="display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a href="tel:9133903780" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Call or Text (913) 390-3780
+            </a>
+            <!-- Replace href="#book" with your HCP booking link -->
+            <a href="#book" class="btn btn-outline-white">Book an Appointment</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         WHY CHOOSE US
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="why" class="section" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="why-inner">
+
+          <div class="why-content reveal">
+            <header class="section-header">
+              <span class="section-label">Why Spark Doc Electric</span>
+              <h2 id="why-heading" class="section-title">We Show Up. We Do It Right. We Stand Behind It.</h2>
+            </header>
+            <ul class="why-list">
+              <li class="why-item">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h3>Licensed &amp; Insured</h3>
+                  <p>Fully licensed electricians. We're always happy to provide our license number and proof of insurance before any work begins.</p>
+                </div>
+              </li>
+              <li class="why-item">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <div>
+                  <h3>5-Year Labor Warranty</h3>
+                  <p>We back every job with a 5-year warranty on labor. If something isn't right, we'll make it right — no hassle.</p>
+                </div>
+              </li>
+              <li class="why-item">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                </div>
+                <div>
+                  <h3>Fast Response — Same &amp; Next Day</h3>
+                  <p>We know electrical problems don't wait. We're known for quick responses and often get to you the same or next day.</p>
+                </div>
+              </li>
+              <li class="why-item">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                </div>
+                <div>
+                  <h3>Transparent, Honest Pricing</h3>
+                  <p>You'll know the cost upfront. No hidden fees, no surprise bills — just straightforward, fair pricing for quality work.</p>
+                </div>
+              </li>
+              <li class="why-item">
+                <div class="why-icon" aria-hidden="true">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                </div>
+                <div>
+                  <h3>Locally Owned — Bobby Is Your Electrician</h3>
+                  <p>No dispatch center, no strangers. Bobby is the owner and the one doing the work — your neighbor, not a franchise.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- CTA Box -->
+          <div class="why-cta-box reveal">
+            <h3>Ready to Get Started?</h3>
+            <p>Call, text, or book online — we'll take care of the rest.</p>
+            <a href="tel:9133903780" class="why-cta-phone">(913) 390-3780</a>
+            <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 12px;">
+              <a href="tel:9133903780" class="btn btn-primary" style="flex: 1; min-width: 140px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                Call Now
+              </a>
+              <a href="sms:9133903780" class="btn btn-outline-white" style="flex: 1; min-width: 140px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+                Send a Text
+              </a>
+            </div>
+            <div class="why-divider">or</div>
+            <!-- Replace href="#book" with your HCP booking link -->
+            <a href="#book" class="btn btn-outline-white" style="width: 100%;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book an Appointment Online
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         HOW IT WORKS
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="how-it-works" class="section" aria-labelledby="how-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Simple Process</span>
+          <h2 id="how-heading" class="section-title">Getting Your Electrical Fixed Is Easy</h2>
+          <p class="section-sub">Three steps from problem to solved — no stress, no runaround.</p>
+        </header>
+        <div class="steps-grid">
+          <div class="step-card reveal">
+            <div class="step-num" aria-hidden="true">1</div>
+            <h3>Call, Text, or Book Online</h3>
+            <p>Reach out by phone, text, or use our online booking to pick a time that works for you — available 24/7 for emergencies.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num" aria-hidden="true">2</div>
+            <h3>We Confirm &amp; Show Up</h3>
+            <p>Bobby will confirm your appointment, arrive on time, and walk you through exactly what needs to be done before any work begins.</p>
+          </div>
+          <div class="step-card reveal">
+            <div class="step-num" aria-hidden="true">3</div>
+            <h3>Work Done Right</h3>
+            <p>Quality workmanship, clean job site, and a thorough walkthrough when finished. Backed by our 5-year labor warranty.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         SERVICE AREAS
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="areas" class="section" aria-labelledby="areas-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Service Areas</span>
+          <h2 id="areas-heading" class="section-title">Serving Olathe &amp; the Kansas City Metro</h2>
+          <p class="section-sub">Based in Olathe, we proudly serve communities across the Kansas City metro area.</p>
+        </header>
+        <div class="areas-grid reveal">
+          <div class="area-pill primary">Olathe, KS</div>
+          <div class="area-pill">Overland Park, KS</div>
+          <div class="area-pill">Leawood, KS</div>
+          <div class="area-pill">Prairie Village, KS</div>
+          <div class="area-pill">Shawnee, KS</div>
+          <div class="area-pill">Lenexa, KS</div>
+          <div class="area-pill">Mission, KS</div>
+          <div class="area-pill">Kansas City, MO</div>
+        </div>
+        <p class="areas-note reveal"><strong>Don't see your city?</strong> Call us at <a href="tel:9133903780" style="color: var(--red-light);">(913) 390-3780</a> — we may still be able to help.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         REVIEWS / TESTIMONIALS
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="reviews" class="section" aria-labelledby="reviews-heading">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Customer Reviews</span>
+          <h2 id="reviews-heading" class="section-title">What Kansas City Homeowners Are Saying</h2>
+          <p class="section-sub">Hundreds of satisfied customers across the metro. Here's what a few of them had to say.</p>
+        </header>
+        <div class="reviews-grid">
+
+          <article class="review-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">Bobby was so quick and responsive — he was able to get some work done for me next day. He genuinely cares about his customers and communicates well throughout the whole process. Went above and beyond.</p>
+            <footer class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">K</div>
+              <div>
+                <p class="reviewer-name">Kansas City Homeowner</p>
+                <p class="reviewer-source">Google Review</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">Had them out to increase transformer output and install an outdoor GFCI. They responded quickly, came on time, and finished expeditiously. Very good service and reasonably priced. Highly recommend.</p>
+            <footer class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">M</div>
+              <div>
+                <p class="reviewer-name">Olathe Homeowner</p>
+                <p class="reviewer-source">Yahoo Local Review</p>
+              </div>
+            </footer>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p class="review-text">Incredibly knowledgeable and professional. When I asked for his license and proof of insurance, he provided them immediately — no hesitation. That kind of transparency means everything when you're trusting someone in your home.</p>
+            <footer class="reviewer">
+              <div class="reviewer-avatar" aria-hidden="true">J</div>
+              <div>
+                <p class="reviewer-name">Overland Park Homeowner</p>
+                <p class="reviewer-source">Verified Review</p>
+              </div>
+            </footer>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════════════════════
+         EMERGENCY CTA BAND
+    ═══════════════════════════════════════════════════════════════ -->
+    <section id="emergency-cta" aria-label="Emergency contact">
+      <div class="container">
+        <div class="emergency-inner">
+          <div class="emergency-label">⚡ 24/7 Emergency Service Available</div>
+          <h2>Electrical Emergency? We're Here.</h2>
+          <p>Don't wait — electrical problems can be dangerous. Call or text us right now and we'll get to you fast.</p>
+          <div class="emergency-btns">
+            <a href="tel:9133903780" class="btn btn-white btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              Call (913) 390-3780
+            </a>
+            <a href="sms:9133903780" class="btn btn-outline-white btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+              Send a Text
+            </a>
+            <!-- Replace href="#book" with your HCP booking link -->
+            <a href="#book" class="btn btn-outline-white btn-lg">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              Book an Appointment
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════════════════════════ -->
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="#hero" class="logo" aria-label="Spark Doc Electric">
+            <svg width="28" height="28" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+              <rect width="32" height="32" rx="6" fill="#CC1F1F"/>
+              <path d="M18 4L8 18h8l-2 10 12-14h-8l2-10z" fill="#fff"/>
+            </svg>
+            <span class="logo-text"><span>Spark Doc</span> Electric</span>
+          </a>
+          <p>Licensed and insured residential electrician serving Olathe and the greater Kansas City metro. Quality work, transparent pricing, and a 5-year warranty on every job.</p>
+          <div class="footer-license">
+            Licensed &amp; Insured · Kansas City Metro · Olathe, KS 66062
+          </div>
+        </div>
+
+        <!-- Services -->
+        <nav class="footer-col" aria-label="Services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Panel Upgrades</a></li>
+            <li><a href="#services">EV Charger Installation</a></li>
+            <li><a href="#services">Electrical Rewiring</a></li>
+            <li><a href="#services">Lighting Installation</a></li>
+            <li><a href="#services">GFCI Outlets</a></li>
+            <li><a href="#services">Surge Protection</a></li>
+            <li><a href="#services">Safety Inspections</a></li>
+            <li><a href="#services">24/7 Emergency</a></li>
+          </ul>
+        </nav>
+
+        <!-- Areas -->
+        <nav class="footer-col" aria-label="Service areas">
+          <h4>Service Areas</h4>
+          <ul>
+            <li><a href="#areas">Olathe, KS</a></li>
+            <li><a href="#areas">Overland Park, KS</a></li>
+            <li><a href="#areas">Leawood, KS</a></li>
+            <li><a href="#areas">Prairie Village, KS</a></li>
+            <li><a href="#areas">Shawnee, KS</a></li>
+            <li><a href="#areas">Lenexa, KS</a></li>
+            <li><a href="#areas">Mission, KS</a></li>
+            <li><a href="#areas">Kansas City, MO</a></li>
+          </ul>
+        </nav>
+
+        <!-- Contact -->
+        <div class="footer-col footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:9133903780">(913) 390-3780</a>
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <a href="sms:9133903780">Text (913) 390-3780</a>
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Available 24/7 for Emergencies
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Olathe, KS 66062
+          </p>
+          <div style="margin-top: 20px;">
+            <!-- Replace href="#book" with your HCP booking link -->
+            <a href="#book" class="btn btn-primary" style="width: 100%; justify-content: center;">Book an Appointment</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Spark Doc Electric. All rights reserved.</p>
+        <p>Licensed Electrician · Olathe, KS · Serving the Kansas City Metro</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══ JS ═══════════════════════════════════════════════════ -->
+  <script src="js/script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
