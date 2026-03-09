@@ -277,11 +277,7 @@ p  { font-size: 1.0625rem; line-height: 1.7; }
 @media (max-width: 1024px) {
   .nav-links { display: none; }
   .hamburger { display: flex; }
-  .header-phone .phone-label { display: none; }
-}
-@media (max-width: 480px) {
-  .header-phone .phone-number { font-size: 0.95rem; }
-  .header-cta .btn { display: none; }
+  .header-cta { display: none; }
 }
 
 /* ─── Hero Section ──────────────────────────────────── */
