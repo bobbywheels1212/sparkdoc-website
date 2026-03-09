@@ -418,22 +418,7 @@ p  { font-size: 1.0625rem; line-height: 1.7; }
 @media (max-width: 1024px) {
   .hero-inner { grid-template-columns: 1fr; gap: 40px; }
   .hero-visual { display: none; }
-  #hero {
-    padding: 60px 0 280px;
-    background-color: #0D0D0D;
-    background-image:
-      linear-gradient(to bottom,
-        rgba(0,0,0,1) 0%,
-        rgba(0,0,0,0) 20%,
-        rgba(0,0,0,0) 80%,
-        rgba(0,0,0,1) 100%
-      ),
-      url('../hero-bg.jpg');
-    background-size: 100% auto;
-    background-position: center 40%;
-    background-repeat: no-repeat;
-  }
-  .hero-ctas { margin-top: 52px; }
+  #hero { padding: 60px 0; }
 }
 @media (max-width: 480px) {
   .hero-ctas { flex-direction: column; }
