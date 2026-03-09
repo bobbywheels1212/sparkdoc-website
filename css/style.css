@@ -5,6 +5,8 @@
 
 /* ─── Reset & Base ─────────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+.mobile-only { display: none; }
+@media (max-width: 1024px) { .mobile-only { display: inline-flex; } }
 
 :root {
   --red:        #CC1F1F;
