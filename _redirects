@@ -1,0 +1,5 @@
+# Redirect old/alternate domains to canonical domain
+https://johomeelectric.com/* https://www.sparkdockc.com/:splat 301!
+https://www.johomeelectric.com/* https://www.sparkdockc.com/:splat 301!
+https://sparkdocelectrickc.com/* https://www.sparkdockc.com/:splat 301!
+https://www.sparkdocelectrickc.com/* https://www.sparkdockc.com/:splat 301!
