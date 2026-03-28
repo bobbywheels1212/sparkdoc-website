@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Service Area | Electrician Serving Kansas City Metro | Spark Doc Electric</title>
+  <meta name="description" content="Spark Doc Electric serves the entire Kansas City metro — Johnson, Wyandotte, Miami & Douglas counties in KS, plus Jackson, Cass, Platte & Clay counties in MO. Licensed electrician. Call (913) 390-3780." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://www.sparkdockc.com/service-area.html" />
+  <link rel="icon" type="image/png" href="logo.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Service Area | Electrician Serving Kansas City Metro | Spark Doc Electric" />
+  <meta property="og:description" content="Serving Johnson, Wyandotte & Miami counties in Kansas, and Jackson, Cass & Platte counties in Missouri. Local electrician. Call (913) 390-3780." />
+  <meta property="og:url" content="https://www.sparkdockc.com/service-area.html" />
+  <meta property="og:site_name" content="Spark Doc Electric" />
+  <meta property="og:image" content="https://www.sparkdockc.com/logo.png" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Spark Doc Electric",
+    "url": "https://www.sparkdockc.com",
+    "telephone": "+19133903780",
+    "description": "Licensed and insured residential electrician serving the full Kansas City metro area across 6 counties in Kansas and Missouri.",
+    "areaServed": [
+      {"@type": "AdministrativeArea", "name": "Johnson County", "addressRegion": "KS"},
+      {"@type": "AdministrativeArea", "name": "Wyandotte County", "addressRegion": "KS"},
+      {"@type": "AdministrativeArea", "name": "Miami County", "addressRegion": "KS"},
+      {"@type": "AdministrativeArea", "name": "Douglas County", "addressRegion": "KS"},
+      {"@type": "AdministrativeArea", "name": "Jackson County", "addressRegion": "MO"},
+      {"@type": "AdministrativeArea", "name": "Clay County", "addressRegion": "MO"},
+      {"@type": "AdministrativeArea", "name": "Cass County", "addressRegion": "MO"},
+      {"@type": "AdministrativeArea", "name": "Platte County", "addressRegion": "MO"}
+    ],
+    "address": {"@type": "PostalAddress", "streetAddress": "18504 W 153rd Ter", "addressLocality": "Olathe", "addressRegion": "KS", "postalCode": "66062", "addressCountry": "US"},
+    "geo": {"@type": "GeoCoordinates", "latitude": 38.8814, "longitude": -94.8191},
+    "openingHoursSpecification": {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"], "opens": "00:00", "closes": "23:59"},
+    "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "24"}
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <style>
+    .page-hero{background:var(--black);padding:100px 0 70px}
+    .page-hero .hero-eyebrow{display:inline-flex;align-items:center;gap:6px;background:rgba(204,31,31,0.15);color:var(--red-light);border:1px solid rgba(204,31,31,0.3);border-radius:20px;padding:6px 14px;font-size:.85rem;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:20px}
+    .page-hero h1{color:var(--white);margin-bottom:20px}
+    .page-hero p{color:var(--silver);font-size:1.15rem;max-width:700px;margin-bottom:32px}
+    .hero-ctas{display:flex;gap:16px;flex-wrap:wrap}
+
+    /* Map section */
+    .map-section{padding:64px 0;background:var(--off-white)}
+    .map-wrap{border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-md);margin-top:36px}
+    #service-map{width:100%;height:460px}
+
+    /* County grid */
+    .counties-section{padding:72px 0}
+    .counties-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:32px;margin-top:44px}
+    .county-card{background:var(--white);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow-sm);border-top:4px solid var(--red)}
+    .county-card.mo{border-top-color:#1a56a0}
+    .county-state-badge{display:inline-block;font-size:.75rem;font-weight:800;text-transform:uppercase;letter-spacing:.08em;padding:3px 10px;border-radius:12px;margin-bottom:14px}
+    .county-state-badge.ks{background:rgba(204,31,31,0.12);color:var(--red)}
+    .county-state-badge.mo{background:rgba(26,86,160,0.12);color:#1a56a0}
+    .county-card h3{font-size:1.15rem;margin-bottom:16px;color:var(--dark)}
+    .city-pills{display:flex;flex-wrap:wrap;gap:10px}
+    .city-pill{background:var(--off-white);color:var(--dark);padding:8px 16px;border-radius:20px;font-size:.875rem;font-weight:600;transition:background .2s,color .2s;text-decoration:none}
+    .city-pill:hover{background:var(--red);color:var(--white)}
+    .city-pill.no-link{cursor:default;color:var(--grey)}
+    .city-pill.no-link:hover{background:var(--off-white);color:var(--grey)}
+
+    /* CTA band */
+    .cta-band{background:var(--red);padding:72px 0;text-align:center}
+    .cta-band h2{color:var(--white);margin-bottom:16px}
+    .cta-band p{color:rgba(255,255,255,0.85);font-size:1.1rem;margin-bottom:32px;max-width:600px;margin-left:auto;margin-right:auto}
+    .cta-band .btn-row{display:flex;gap:16px;justify-content:center;flex-wrap:wrap}
+
+    @media(max-width:768px){
+      .page-hero{padding:80px 0 52px}
+      .map-wrap iframe{height:320px}
+    }
+  </style>
+</head>
+<body>
+
+  <a id="float-cta" href="tel:9133903780" aria-label="Call Spark Doc Electric">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    (913) 390-3780
+  </a>
+
+  <header id="site-header" role="banner">
+    <div class="container">
+      <div class="header-inner">
+        <a href="/" class="logo" aria-label="Spark Doc Electric — Home">
+          <img src="logo-white.png" alt="Spark Doc Electric logo" style="height:40px;width:auto;" />
+          <span class="logo-text"><span>Spark Doc</span> Electric</span>
+        </a>
+        <nav class="nav-links" aria-label="Main navigation">
+          <a href="/#services">Services</a>
+          <a href="/#why">About</a>
+          <a href="/service-area.html" class="active">Service Area</a>
+          <a href="/#reviews">Reviews</a>
+        </nav>
+        <div class="header-cta">
+          <a href="tel:9133903780" class="header-phone" aria-label="Call (913) 390-3780">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span class="phone-number">(913) 390-3780</span>
+          </a>
+        </div>
+        <button class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="/#services">Services</a>
+      <a href="/#why">About Us</a>
+      <a href="/service-area.html">Service Area</a>
+      <a href="/#reviews">Reviews</a>
+      <div class="mobile-cta-row">
+        <a href="tel:9133903780" class="btn btn-primary">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        </a>
+        <a href="https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d645d2a8fbaf15b4ed1000?v2=true" class="btn btn-outline-red">Book Online</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="hero-eyebrow">
+          <svg width="12" height="12" viewBox="0 0 32 32" fill="currentColor"><path d="M18 4L8 18h8l-2 10 12-14h-8l2-10z"/></svg>
+          Kansas City Metro Electrician
+        </div>
+        <h1>Our Service Area</h1>
+        <p>Based in Olathe, KS, Spark Doc Electric covers the full Kansas City metro — six counties across two states. Whether you're in Johnson County KS or Platte County MO, you get the same licensed, insured electrician, the same 5-year warranty, and the same same-day availability.</p>
+        <div class="hero-ctas">
+          <a href="tel:9133903780" class="btn btn-primary btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call (913) 390-3780
+          </a>
+          <a href="sms:9133903780" class="btn btn-outline-white btn-lg mobile-only">Text Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAP -->
+    <section class="map-section">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Coverage Map</span>
+          <h2 class="section-title">Kansas City Metro Service Area</h2>
+          <p class="section-sub">6 counties · 2 states · hundreds of cities and communities served</p>
+        </header>
+        <div class="map-wrap reveal">
+          <div id="service-map"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTY GRID -->
+    <section class="counties-section">
+      <div class="container">
+        <header class="section-header reveal">
+          <span class="section-label">Where We Work</span>
+          <h2 class="section-title">Cities &amp; Communities We Serve</h2>
+          <p class="section-sub">Click any city to see local services, common electrical issues in that area, and what our customers are saying.</p>
+        </header>
+
+        <div class="counties-grid reveal">
+
+          <!-- Johnson County KS -->
+          <div class="county-card">
+            <span class="county-state-badge ks">Kansas</span>
+            <h3>Johnson County, KS</h3>
+            <div class="city-pills">
+              <a href="/areas/olathe-ks.html" class="city-pill">Olathe</a>
+              <a href="/areas/overland-park-ks.html" class="city-pill">Overland Park</a>
+              <a href="/areas/leawood-ks.html" class="city-pill">Leawood</a>
+              <a href="/areas/prairie-village-ks.html" class="city-pill">Prairie Village</a>
+              <a href="/areas/shawnee-ks.html" class="city-pill">Shawnee</a>
+              <a href="/areas/lenexa-ks.html" class="city-pill">Lenexa</a>
+              <a href="/areas/mission-ks.html" class="city-pill">Mission</a>
+              <a href="/areas/merriam-ks.html" class="city-pill">Merriam</a>
+              <a href="/areas/gardner-ks.html" class="city-pill">Gardner</a>
+              <a href="/areas/de-soto-ks.html" class="city-pill">De Soto</a>
+              <a href="/areas/spring-hill-ks.html" class="city-pill">Spring Hill</a>
+              <span class="city-pill no-link">Stilwell</span>
+              <span class="city-pill no-link">Roeland Park</span>
+              <span class="city-pill no-link">Fairway</span>
+            </div>
+          </div>
+
+          <!-- Wyandotte County KS -->
+          <div class="county-card">
+            <span class="county-state-badge ks">Kansas</span>
+            <h3>Wyandotte County, KS</h3>
+            <div class="city-pills">
+              <a href="/areas/kansas-city-ks.html" class="city-pill">Kansas City, KS</a>
+              <a href="/areas/bonner-springs-ks.html" class="city-pill">Bonner Springs</a>
+              <span class="city-pill no-link">Edwardsville</span>
+              <span class="city-pill no-link">Lake Quivira</span>
+            </div>
+          </div>
+
+          <!-- Douglas County KS -->
+          <div class="county-card">
+            <span class="county-state-badge ks">Kansas</span>
+            <h3>Douglas County, KS</h3>
+            <div class="city-pills">
+              <span class="city-pill no-link">Lawrence</span>
+              <span class="city-pill no-link">Eudora</span>
+              <span class="city-pill no-link">Baldwin City</span>
+              <span class="city-pill no-link">Lecompton</span>
+            </div>
+          </div>
+
+          <!-- Miami County KS -->
+          <div class="county-card">
+            <span class="county-state-badge ks">Kansas</span>
+            <h3>Miami County, KS</h3>
+            <div class="city-pills">
+              <span class="city-pill no-link">Paola</span>
+              <span class="city-pill no-link">Osawatomie</span>
+              <span class="city-pill no-link">Louisburg</span>
+              <a href="/areas/spring-hill-ks.html" class="city-pill">Spring Hill</a>
+            </div>
+          </div>
+
+          <!-- Jackson County MO -->
+          <div class="county-card mo">
+            <span class="county-state-badge mo">Missouri</span>
+            <h3>Jackson County, MO</h3>
+            <div class="city-pills">
+              <a href="/areas/kansas-city-mo.html" class="city-pill">Kansas City, MO</a>
+              <a href="/areas/independence-mo.html" class="city-pill">Independence</a>
+              <a href="/areas/lees-summit-mo.html" class="city-pill">Lee's Summit</a>
+              <a href="/areas/blue-springs-mo.html" class="city-pill">Blue Springs</a>
+              <a href="/areas/raytown-mo.html" class="city-pill">Raytown</a>
+              <a href="/areas/grandview-mo.html" class="city-pill">Grandview</a>
+              <span class="city-pill no-link">Sugar Creek</span>
+              <span class="city-pill no-link">Oak Grove</span>
+            </div>
+          </div>
+
+          <!-- Cass County MO -->
+          <div class="county-card mo">
+            <span class="county-state-badge mo">Missouri</span>
+            <h3>Cass County, MO</h3>
+            <div class="city-pills">
+              <span class="city-pill no-link">Belton</span>
+              <span class="city-pill no-link">Raymore</span>
+              <span class="city-pill no-link">Harrisonville</span>
+              <span class="city-pill no-link">Pleasant Hill</span>
+              <span class="city-pill no-link">Peculiar</span>
+            </div>
+          </div>
+
+          <!-- Clay County MO -->
+          <div class="county-card mo">
+            <span class="county-state-badge mo">Missouri</span>
+            <h3>Clay County, MO</h3>
+            <div class="city-pills">
+              <span class="city-pill no-link">Liberty</span>
+              <span class="city-pill no-link">Kansas City (Clay Co.)</span>
+              <span class="city-pill no-link">Kearney</span>
+              <span class="city-pill no-link">Smithville</span>
+              <span class="city-pill no-link">Excelsior Springs</span>
+            </div>
+          </div>
+
+          <!-- Platte County MO -->
+          <div class="county-card mo">
+            <span class="county-state-badge mo">Missouri</span>
+            <h3>Platte County, MO</h3>
+            <div class="city-pills">
+              <span class="city-pill no-link">Parkville</span>
+              <span class="city-pill no-link">Platte City</span>
+              <span class="city-pill no-link">Riverside</span>
+              <span class="city-pill no-link">Weatherby Lake</span>
+              <span class="city-pill no-link">Weston</span>
+            </div>
+          </div>
+
+        </div>
+
+        <p class="areas-note reveal" style="margin-top:40px;"><strong>Don't see your city?</strong> Call us at <a href="tel:9133903780" style="color:var(--red-light);">(913) 390-3780</a> — we likely still cover your area.</p>
+
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band">
+      <div class="container">
+        <h2>Ready to Schedule?</h2>
+        <p>Same-day and next-day appointments available across the entire Kansas City metro. Call, text, or book online.</p>
+        <div class="btn-row">
+          <a href="tel:9133903780" class="btn btn-white btn-lg">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call (913) 390-3780
+          </a>
+          <a href="sms:9133903780" class="btn btn-outline-white btn-lg mobile-only">Text Us</a>
+          <a href="https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d645d2a8fbaf15b4ed1000?v2=true" class="btn btn-outline-white btn-lg">Book an Appointment</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo" aria-label="Spark Doc Electric">
+            <img src="logo-white.png" alt="Spark Doc Electric logo" style="height:40px;width:auto;" />
+            <span class="logo-text"><span>Spark Doc</span> Electric</span>
+          </a>
+          <p>Licensed and insured residential electrician serving Olathe and the greater Kansas City metro. Quality work, transparent pricing, and a 5-year warranty on every job.</p>
+          <div class="footer-license">
+            Licensed &amp; Insured · Kansas City Metro · Olathe, KS 66062
+          </div>
+        </div>
+        <nav class="footer-col" aria-label="Services">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="/services/panel-upgrade.html">Panel Upgrades</a></li>
+            <li><a href="/services/ev-charger-installation.html">EV Charger Installation</a></li>
+            <li><a href="/services/flickering-lights.html">Flickering Lights</a></li>
+            <li><a href="/services/sparking-panel.html">Sparking Panel</a></li>
+            <li><a href="/services/tripped-breakers.html">Tripped Breakers</a></li>
+            <li><a href="/services/dead-outlets.html">Dead Outlets</a></li>
+            <li><a href="/services/partial-power-outage.html">Partial Power Outage</a></li>
+            <li><a href="/services/emergency-electrician.html">24/7 Emergency</a></li>
+          </ul>
+        </nav>
+        <nav class="footer-col" aria-label="Service areas">
+          <h4>Service Areas</h4>
+          <ul>
+            <li><a href="/areas/olathe-ks.html">Olathe, KS</a></li>
+            <li><a href="/areas/overland-park-ks.html">Overland Park, KS</a></li>
+            <li><a href="/areas/shawnee-ks.html">Shawnee, KS</a></li>
+            <li><a href="/areas/lenexa-ks.html">Lenexa, KS</a></li>
+            <li><a href="/areas/leawood-ks.html">Leawood, KS</a></li>
+            <li><a href="/areas/prairie-village-ks.html">Prairie Village, KS</a></li>
+            <li><a href="/areas/kansas-city-mo.html">Kansas City, MO</a></li>
+            <li><a href="/service-area.html">View All Areas →</a></li>
+          </ul>
+        </nav>
+        <div class="footer-col footer-contact">
+          <h4>Contact Us</h4>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11 19.79 19.79 0 01.04 2.32 2 2 0 012 .14h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8a16 16 0 006.91 6.91l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:9133903780">(913) 390-3780</a>
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            <a href="sms:9133903780">Text (913) 390-3780</a>
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            Available 24/7 for Emergencies
+          </p>
+          <p>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            18504 W 153rd Ter, Olathe, KS 66062
+          </p>
+          <div style="margin-top:20px;">
+            <a href="https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d645d2a8fbaf15b4ed1000?v2=true" class="btn btn-primary" style="width:100%;justify-content:center;">Book an Appointment</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Spark Doc Electric. All rights reserved.</p>
+        <p>Licensed Electrician · Olathe, KS · Serving the Kansas City Metro</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script>
+    var map = L.map('service-map', {scrollWheelZoom: false}).setView([38.95, -94.62], 9);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+      maxZoom: 18
+    }).addTo(map);
+
+    var countyStyle = {
+      color: '#CC1F1F',
+      weight: 2.5,
+      opacity: 1,
+      fillColor: '#CC1F1F',
+      fillOpacity: 0.22
+    };
+
+    var geoids = ['20091','20209','20121','20045','29095','29037','29165','29047'];
+    var where = "GEOID IN ('" + geoids.join("','") + "')";
+    var url = 'https://tigerweb.geo.census.gov/arcgis/rest/services/TIGERweb/State_County/MapServer/11/query'
+      + '?where=' + encodeURIComponent(where)
+      + '&f=geojson&outSR=4326&outFields=GEOID,NAME,STATE';
+
+    fetch(url)
+      .then(function(r) { return r.json(); })
+      .then(function(data) {
+        L.geoJSON(data, {
+          style: countyStyle,
+          onEachFeature: function(feature, layer) {
+            var name = feature.properties.NAME + ' County';
+            var state = feature.properties.STATE === '20' ? 'KS' : 'MO';
+            layer.bindPopup('<strong>' + name + ', ' + state + '</strong><br>Spark Doc Electric serves this area.');
+            layer.on('mouseover', function() { layer.setStyle({fillOpacity: 0.42}); });
+            layer.on('mouseout',  function() { layer.setStyle({fillOpacity: 0.22}); });
+          }
+        }).addTo(map);
+      });
+  </script>
+
+</body>
+</html>
