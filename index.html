@@ -64,6 +64,7 @@
       "name": "Electrical Services",
       "itemListElement": [
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Panel Upgrades & Breaker Box"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Panel Replacement"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "EV Charger Installation"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Rewiring"}},
         {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Lighting Installation"}},
@@ -110,6 +111,26 @@
 
   <!-- ═══ Stylesheet ══════════════════════════════════════════ -->
   <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .nav-drop { position: relative; }
+    .nav-drop-menu {
+      display: none;
+      position: absolute;
+      top: calc(100% + 12px);
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 250px;
+      background: var(--dark2);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 8px;
+      padding: 8px 0;
+      z-index: 1100;
+      box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+    }
+    .nav-drop:hover .nav-drop-menu,
+    .nav-drop:focus-within .nav-drop-menu { display: block; }
+    .nav-drop-menu a { display: block; padding: 10px 18px; white-space: nowrap; text-align: left; }
+  </style>
 </head>
 <body>
 
@@ -137,7 +158,14 @@
 
         <!-- Desktop Nav -->
         <nav class="nav-links" aria-label="Main navigation">
-          <a href="#services">Services</a>
+          <div class="nav-drop">
+            <a href="#services">Services</a>
+            <div class="nav-drop-menu">
+              <a href="/services/panel-upgrade.html">Panel Upgrade</a>
+              <a href="/services/panel-replacement.html">Panel Replacement</a>
+              <a href="/services/electrical-troubleshooting.html">Troubleshooting</a>
+            </div>
+          </div>
           <a href="#why">About</a>
           <a href="/service-area.html">Service Area</a>
           <a href="#reviews">Reviews</a>
@@ -167,6 +195,9 @@
     <!-- Mobile Nav Drawer -->
     <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
       <a href="#services">Services</a>
+      <a href="/services/panel-upgrade.html">Panel Upgrade</a>
+      <a href="/services/panel-replacement.html">Panel Replacement</a>
+      <a href="/services/electrical-troubleshooting.html">Troubleshooting</a>
       <a href="#why">About Us</a>
       <a href="/service-area.html">Service Area</a>
       <a href="#reviews">Reviews</a>
@@ -322,6 +353,16 @@
             </a>
           </article>
 
+          <article class="service-card reveal">
+            <a href="/services/panel-replacement.html" style="display:contents;color:inherit;">
+            <div class="service-icon" aria-hidden="true">
+              <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="1" width="18" height="22" rx="1"/><line x1="3" y1="8" x2="21" y2="8"/><line x1="12" y1="8" x2="12" y2="23"/><line x1="6" y1="12" x2="10" y2="12"/><line x1="14" y1="12" x2="18" y2="12"/><line x1="6" y1="16" x2="10" y2="16"/><line x1="14" y1="16" x2="18" y2="16"/><line x1="6" y1="20" x2="10" y2="20"/><line x1="14" y1="20" x2="18" y2="20"/></svg>
+            </div>
+            <h3>Panel Replacement</h3>
+            <p>Failed, unsafe, or obsolete breaker box? We replace Federal Pacific, Zinsco, and damaged panels — same amps or a 100A–200A upgrade if you need it.</p>
+            </a>
+          </article>
+
           <!-- 2 -->
           <article class="service-card reveal mobile-hide">
             <a href="/services/ev-charger-installation.html" style="display:contents;color:inherit;">
@@ -401,7 +442,7 @@
 
           <!-- 9 -->
           <article class="service-card reveal">
-            <a href="/services/flickering-lights.html" style="display:contents;color:inherit;">
+            <a href="/services/electrical-troubleshooting.html" style="display:contents;color:inherit;">
             <div class="service-icon" aria-hidden="true">
               <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
             </div>
@@ -669,6 +710,8 @@
           <h4>Services</h4>
           <ul>
             <li><a href="/services/panel-upgrade.html">Panel Upgrades</a></li>
+            <li><a href="/services/panel-replacement.html">Panel Replacement</a></li>
+            <li><a href="/services/electrical-troubleshooting.html">Troubleshooting &amp; Repairs</a></li>
             <li><a href="/services/ev-charger-installation.html">EV Charger Installation</a></li>
             <li><a href="/services/flickering-lights.html">Flickering Lights</a></li>
             <li><a href="/services/sparking-panel.html">Sparking Panel</a></li>
