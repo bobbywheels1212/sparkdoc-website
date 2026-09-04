@@ -266,6 +266,30 @@ p  { font-size: 1.0625rem; line-height: 1.7; }
 }
 .mobile-nav a:last-child { border-bottom: none; }
 .mobile-nav a:hover { color: var(--white); }
+/* Nested Services group in mobile nav */
+.mobile-nav-group {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-nav-group > a {
+  font-weight: 700;
+}
+.mobile-nav-sub {
+  display: flex;
+  flex-direction: column;
+  padding-left: 18px;
+}
+.mobile-nav-sub a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgba(192, 197, 206, 0.85);
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+.mobile-nav-sub a:hover {
+  color: var(--white);
+}
+
 .mobile-nav .mobile-cta-row {
   display: flex;
   gap: 12px;
