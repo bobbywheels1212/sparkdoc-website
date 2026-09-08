@@ -28,81 +28,182 @@
   <!-- ═══ Schema.org Structured Data ═════════════════════════ -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": ["LocalBusiness", "Electrician"],
-    "name": "Spark Doc Electric",
-    "url": "https://sparkdockc.com",
-    "telephone": "+19133903780",
-    "sameAs": ["https://www.facebook.com/JoHomeElectric", "https://www.tiktok.com/@sparkdocelectric"],
-    "email": "",
-    "description": "Licensed and insured residential electrician serving Olathe, Overland Park, Leawood, Prairie Village, Shawnee, Lenexa, Mission KS, and the greater Kansas City metro area.",
-    "areaServed": [
-      "Olathe, KS", "Overland Park, KS", "Leawood, KS",
-      "Prairie Village, KS", "Shawnee, KS", "Lenexa, KS",
-      "Mission, KS", "Kansas City, MO"
+  "@context": "https://schema.org",
+  "@type": [
+    "LocalBusiness",
+    "Electrician",
+    "Organization"
+  ],
+  "name": "Spark Doc Electric",
+  "url": "https://sparkdockc.com",
+  "telephone": "+19133903780",
+  "sameAs": [
+    "https://www.facebook.com/JoHomeElectric",
+    "https://www.tiktok.com/@sparkdocelectric",
+    "https://maps.app.goo.gl/7x99KCasrKtQJmpd7",
+    "https://prosgrade.com/electricians/olathe/spark-doc-electric"
+  ],
+  "email": "",
+  "description": "Licensed and insured residential electrician serving Olathe, Overland Park, Leawood, Prairie Village, Shawnee, Lenexa, Mission KS, and the greater Kansas City metro area.",
+  "areaServed": [
+    "Olathe, KS",
+    "Overland Park, KS",
+    "Leawood, KS",
+    "Prairie Village, KS",
+    "Shawnee, KS",
+    "Lenexa, KS",
+    "Mission, KS",
+    "Kansas City, MO"
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "18504 W 153rd Ter",
+    "addressLocality": "Olathe",
+    "addressRegion": "KS",
+    "postalCode": "66062",
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 38.8814,
+    "longitude": -94.8191
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
     ],
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "18504 W 153rd Ter",
-      "addressLocality": "Olathe",
-      "addressRegion": "KS",
-      "postalCode": "66062",
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": 38.8814,
-      "longitude": -94.8191
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-      "opens": "00:00",
-      "closes": "23:59"
-    },
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Electrical Services",
-      "itemListElement": [
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Panel Upgrades & Breaker Box"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Panel Replacement"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "EV Charger Installation"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Rewiring"}},
-        
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "GFCI Outlet Repair and Installation", "url": "https://sparkdockc.com/services/gfci-outlet-repair.html"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Dedicated Circuits"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Whole-Home Surge Protection"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Electrical Safety Inspections"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "24/7 Emergency Electrical"}},
-        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Troubleshooting & Repairs"}}
-      ]
-    },
-    "aggregateRating": {
-      "@type": "AggregateRating",
-      "ratingValue": "5",
-      "reviewCount": "24"
-    },
-    "review": [
+    "opens": "00:00",
+    "closes": "23:59"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Electrical Services",
+    "itemListElement": [
       {
-        "@type": "Review",
-        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-        "author": {"@type": "Person", "name": "Kansas City Homeowner"},
-        "reviewBody": "Bobby was so quick and responsive — he was able to get some work done for me next day. He genuinely cares about his customers and communicates well throughout the whole process. Went above and beyond."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Panel Upgrades & Breaker Box"
+        }
       },
       {
-        "@type": "Review",
-        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-        "author": {"@type": "Person", "name": "Olathe Homeowner"},
-        "reviewBody": "Had them out to increase transformer output and install an outdoor GFCI. They responded quickly, came on time, and finished expeditiously. Very good service and reasonably priced. Highly recommend."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Panel Replacement"
+        }
       },
       {
-        "@type": "Review",
-        "reviewRating": {"@type": "Rating", "ratingValue": "5"},
-        "author": {"@type": "Person", "name": "Overland Park Homeowner"},
-        "reviewBody": "Incredibly knowledgeable and professional. When I asked for his license and proof of insurance, he provided them immediately — no hesitation. That kind of transparency means everything when you're trusting someone in your home."
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "EV Charger Installation"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Electrical Rewiring"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "GFCI Outlet Repair and Installation",
+          "url": "https://sparkdockc.com/services/gfci-outlet-repair.html"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Dedicated Circuits"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Whole-Home Surge Protection"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Electrical Safety Inspections"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "24/7 Emergency Electrical"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Troubleshooting & Repairs"
+        }
       }
     ]
-  }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "24"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Kansas City Homeowner"
+      },
+      "reviewBody": "Bobby was so quick and responsive — he was able to get some work done for me next day. He genuinely cares about his customers and communicates well throughout the whole process. Went above and beyond."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Olathe Homeowner"
+      },
+      "reviewBody": "Had them out to increase transformer output and install an outdoor GFCI. They responded quickly, came on time, and finished expeditiously. Very good service and reasonably priced. Highly recommend."
+    },
+    {
+      "@type": "Review",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      },
+      "author": {
+        "@type": "Person",
+        "name": "Overland Park Homeowner"
+      },
+      "reviewBody": "Incredibly knowledgeable and professional. When I asked for his license and proof of insurance, he provided them immediately — no hesitation. That kind of transparency means everything when you're trusting someone in your home."
+    }
+  ],
+  "logo": "https://sparkdockc.com/logo.png"
+}
   </script>
 
   <!-- ═══ Fonts ════════════════════════════════════════════════ -->
