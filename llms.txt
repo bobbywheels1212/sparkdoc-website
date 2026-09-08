@@ -1,0 +1,18 @@
+# Spark Doc Electric
+
+Licensed electrician serving Olathe, KS and the Kansas City metro. Owner-operator: Bobby. Phone: (913) 390-3780. Book online: https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d645d2a8fbaf15b4ed1000?v2=true
+
+## Priority pages
+
+- / : Home. Licensed electrician for panel work, troubleshooting, EV chargers, and emergency calls across Olathe and KC metro.
+- /areas/olathe-ks.html : Olathe hub. Local service coverage, permits, and common residential electrical work in Olathe.
+- /services/panel-upgrade.html : Panel upgrade (often 100A to 200A) with permits and inspection.
+- /services/panel-replacement.html : Replace failed, burned, rusted, or obsolete panels (including Federal Pacific and Zinsco).
+- /services/electrical-troubleshooting.html : Diagnose and repair flickering lights, dead circuits, and breaker problems.
+- /services/ev-charger-installation.html : Level 2 home EV charger installation with dedicated circuit and permits when required.
+- /services/emergency-electrician.html : After-hours response for sparking panels, burning smells, and total power loss.
+- /services/surge-protection.html : Whole-home surge protection installed at the panel.
+- /services/gfci-outlet-repair.html : GFCI diagnosis, repair, and code-required installs in wet areas.
+- /services/dedicated-circuits.html : Dedicated circuits for high-demand appliances, shops, and EV loads.
+
+Website: https://sparkdockc.com
