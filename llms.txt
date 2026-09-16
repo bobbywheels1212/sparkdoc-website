@@ -8,9 +8,16 @@ Licensed electrician serving Olathe, KS and the Kansas City metro. Owner-operato
 - /areas/olathe-ks.html : Olathe hub. Local service coverage, permits, and common residential electrical work in Olathe.
 - /services/panel-upgrade.html : Panel upgrade (often 100A to 200A) with permits and inspection.
 - /services/panel-replacement.html : Replace failed, burned, rusted, or obsolete panels (including Federal Pacific and Zinsco).
+- /services/burning-smell-at-panel.html : Burning smell or heat odor at the breaker panel. Call or book; sparks covered on sparking-panel.
+- /services/federal-pacific-zinsco-panel.html : Federal Pacific Stab-Lok and Zinsco panel replacement with permits and inspection.
+- /services/flickering-lights.html : Flickering lights diagnosis and repair.
+- /services/tripped-breakers.html : Breakers that keep tripping.
+- /services/partial-power-outage.html : Half-house / lost-leg outages (including post-storm partial power).
+- /services/dead-outlets.html : Dead outlet diagnosis and repair.
+- /services/sparking-panel.html : Sparks, buzzing, or crackling at the panel.
 - /services/electrical-troubleshooting.html : Diagnose and repair flickering lights, dead circuits, and breaker problems.
 - /services/ev-charger-installation.html : Level 2 home EV charger installation with dedicated circuit and permits when required.
-- /services/emergency-electrician.html : After-hours response for sparking panels, burning smells, and total power loss.
+- /services/emergency-electrician.html : Call to ask about after-hours response for sparking panels, burning smells, and total power loss.
 - /services/surge-protection.html : Whole-home surge protection installed at the panel.
 - /services/gfci-outlet-repair.html : GFCI diagnosis, repair, and code-required installs in wet areas.
 - /services/dedicated-circuits.html : Dedicated circuits for high-demand appliances, shops, and EV loads.
