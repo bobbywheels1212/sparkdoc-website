@@ -14,18 +14,51 @@
   // ─── Mobile Nav Toggle ─────────────────────────────
   const hamburger = document.querySelector('.hamburger');
   const mobileNav = document.querySelector('.mobile-nav');
+
+  function closeMobileDrawer() {
+    if (!hamburger || !mobileNav) return;
+    hamburger.classList.remove('open');
+    mobileNav.classList.remove('open');
+    hamburger.setAttribute('aria-expanded', 'false');
+    // Collapse Services accordion when drawer closes
+    mobileNav.querySelectorAll('.mobile-nav-group').forEach(group => {
+      group.classList.remove('open');
+      const toggle = group.querySelector('.mobile-nav-toggle');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
+    });
+  }
+
   if (hamburger && mobileNav) {
     hamburger.addEventListener('click', () => {
       const open = hamburger.classList.toggle('open');
       mobileNav.classList.toggle('open', open);
-      hamburger.setAttribute('aria-expanded', open);
+      hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if (!open) {
+        // Ensure Services starts collapsed next open
+        mobileNav.querySelectorAll('.mobile-nav-group').forEach(group => {
+          group.classList.remove('open');
+          const toggle = group.querySelector('.mobile-nav-toggle');
+          if (toggle) toggle.setAttribute('aria-expanded', 'false');
+        });
+      }
     });
-    // Close on nav link click
+
+    // Services accordion: expand/collapse without closing drawer or navigating
+    mobileNav.querySelectorAll('.mobile-nav-group').forEach(group => {
+      const toggle = group.querySelector('.mobile-nav-toggle');
+      if (!toggle) return;
+      toggle.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        const open = group.classList.toggle('open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    });
+
+    // Close drawer only when a real destination link is clicked
     mobileNav.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        hamburger.classList.remove('open');
-        mobileNav.classList.remove('open');
-        hamburger.setAttribute('aria-expanded', false);
+        closeMobileDrawer();
       });
     });
   }
