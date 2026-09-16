@@ -58,12 +58,43 @@
   </script>
   <script type="application/ld+json">
   [
-    {
-      "@context": "https://schema.org",
+  {
+    "@context": "https://schema.org",
+    "@type": "Electrician",
+    "name": "Spark Doc Electric",
+    "url": "https://sparkdockc.com",
+    "telephone": "+19133903780",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "18504 W 153rd Ter",
+      "addressLocality": "Olathe",
+      "addressRegion": "KS",
+      "postalCode": "66062",
+      "addressCountry": "US"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 38.8814,
+      "longitude": -94.8191
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "reviewCount": "24"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "24/7 Emergency Electrician",
+    "serviceType": "Emergency Electrical Service",
+    "description": "24/7 emergency electrician serving Olathe, Johnson County, and the Kansas City metro. Sparking panels, partial outages, burning smells, and urgent electrical repairs.",
+    "url": "https://sparkdockc.com/services/emergency-electrician.html",
+    "provider": {
       "@type": "Electrician",
       "name": "Spark Doc Electric",
-      "url": "https://sparkdockc.com",
       "telephone": "+19133903780",
+      "url": "https://sparkdockc.com",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "18504 W 153rd Ter",
@@ -71,42 +102,34 @@
         "addressRegion": "KS",
         "postalCode": "66062",
         "addressCountry": "US"
-      },
-      "geo": {"@type": "GeoCoordinates", "latitude": 38.8814, "longitude": -94.8191},
-      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5", "reviewCount": "24"}
+      }
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "24/7 Emergency Electrician",
-      "serviceType": "Emergency Electrical Service",
-      "description": "24/7 emergency electrician serving Olathe, Johnson County, and the Kansas City metro. Sparking panels, partial outages, burning smells, and urgent electrical repairs.",
-      "url": "https://sparkdockc.com/services/emergency-electrician.html",
-      "provider": {
-        "@type": "Electrician",
-        "name": "Spark Doc Electric",
-        "telephone": "+19133903780",
-        "url": "https://sparkdockc.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "18504 W 153rd Ter",
-          "addressLocality": "Olathe",
-          "addressRegion": "KS",
-          "postalCode": "66062",
-          "addressCountry": "US"
-        }
+    "areaServed": [
+      "Olathe, KS",
+      "Johnson County, KS",
+      "Kansas City metro"
+    ],
+    "telephone": "+19133903780"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://sparkdockc.com/"
       },
-      "areaServed": ["Olathe, KS", "Johnson County, KS", "Kansas City metro"]
-    },
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://sparkdockc.com/"},
-        {"@type": "ListItem", "position": 2, "name": "24/7 Emergency Electrician", "item": "https://sparkdockc.com/services/emergency-electrician.html"}
-      ]
-    }
-  ]
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "24/7 Emergency Electrician",
+        "item": "https://sparkdockc.com/services/emergency-electrician.html"
+      }
+    ]
+  }
+]
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -199,7 +222,7 @@
           Available 24 Hours, 7 Days a Week
         </div>
         <h1>Emergency Electrician in<br/>Olathe & Kansas City Metro</h1>
-        <p>Electrical emergencies don't follow business hours. Spark Doc Electric is available around the clock to respond to sparking panels, total power loss, burning smells, and any other electrical emergency across Johnson County KS, Jackson County MO, and Wyandotte County KS.</p>
+        <p>An emergency electrician responds when you have sparking at the panel, a burning smell, total power loss, or exposed live wires. Spark Doc Electric answers around the clock for Olathe and the Kansas City metro. Call (913) 390-3780 for an honest ETA; Bobby handles the diagnosis and safe repair with a 5-year warranty on the work.</p>
         <a href="tel:9133903780" class="phone-hero">⚡ (913) 390-3780</a>
         <div class="hero-ctas">
           <a href="tel:9133903780" class="btn btn-primary btn-lg">
