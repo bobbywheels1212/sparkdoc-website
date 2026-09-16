@@ -224,6 +224,47 @@ p  { font-size: 1.0625rem; line-height: 1.7; }
 .header-phone:hover { color: var(--red); }
 .header-phone svg { flex-shrink: 0; }
 
+
+/* Desktop Services dropdown */
+.nav-drop { position: relative; }
+.nav-drop-menu {
+  display: none;
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 440px;
+  max-height: min(70vh, 480px);
+  overflow-y: auto;
+  background: var(--dark2);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 8px;
+  padding: 8px 0;
+  z-index: 1100;
+  box-shadow: 0 12px 32px rgba(0,0,0,0.45);
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.nav-drop:hover .nav-drop-menu,
+.nav-drop:focus-within .nav-drop-menu {
+  display: grid;
+}
+.nav-drop-menu a {
+  display: block;
+  padding: 10px 18px;
+  white-space: nowrap;
+  text-align: left;
+  color: var(--silver);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition), background var(--transition);
+}
+.nav-drop-menu a:hover {
+  color: var(--white);
+  background: rgba(255,255,255,0.06);
+}
+
 /* Hamburger */
 .hamburger {
   display: none;
@@ -266,18 +307,45 @@ p  { font-size: 1.0625rem; line-height: 1.7; }
 }
 .mobile-nav a:last-child { border-bottom: none; }
 .mobile-nav a:hover { color: var(--white); }
-/* Nested Services group in mobile nav */
+/* Nested Services group in mobile nav (accordion) */
 .mobile-nav-group {
   display: flex;
   flex-direction: column;
 }
-.mobile-nav-group > a {
+.mobile-nav-toggle {
+  display: block;
+  width: 100%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  color: var(--silver);
+  font-family: inherit;
+  font-size: 1rem;
   font-weight: 700;
+  text-align: left;
+  padding: 10px 0;
+  cursor: pointer;
+  transition: color var(--transition);
+}
+.mobile-nav-toggle:hover { color: var(--white); }
+.mobile-nav-toggle::after {
+  content: "▾";
+  float: right;
+  font-size: 0.85em;
+  opacity: 0.7;
+  transition: transform var(--transition);
+}
+.mobile-nav-group.open .mobile-nav-toggle::after {
+  transform: rotate(180deg);
 }
 .mobile-nav-sub {
-  display: flex;
+  display: none;
   flex-direction: column;
   padding-left: 18px;
+}
+.mobile-nav-group.open .mobile-nav-sub,
+.mobile-nav-group:has(.mobile-nav-toggle[aria-expanded="true"]) .mobile-nav-sub {
+  display: flex;
 }
 .mobile-nav-sub a {
   font-size: 0.9rem;
