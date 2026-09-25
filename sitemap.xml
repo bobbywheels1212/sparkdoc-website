@@ -10,189 +10,201 @@
 
   <!-- Service Pages -->
   <url>
-    <loc>https://sparkdockc.com/services/flickering-lights.html</loc>
+    <loc>https://sparkdockc.com/services/flickering-lights</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/partial-power-outage.html</loc>
+    <loc>https://sparkdockc.com/services/partial-power-outage</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/sparking-panel.html</loc>
+    <loc>https://sparkdockc.com/services/sparking-panel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/burning-smell-at-panel.html</loc>
+    <loc>https://sparkdockc.com/services/burning-smell-at-panel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/federal-pacific-zinsco-panel.html</loc>
+    <loc>https://sparkdockc.com/services/federal-pacific-zinsco-panel</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/tripped-breakers.html</loc>
+    <loc>https://sparkdockc.com/services/tripped-breakers</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/dead-outlets.html</loc>
+    <loc>https://sparkdockc.com/services/dead-outlets</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/gfci-outlet-repair.html</loc>
+    <loc>https://sparkdockc.com/services/gfci-outlet-repair</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/panel-upgrade.html</loc>
+    <loc>https://sparkdockc.com/services/panel-upgrade</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/panel-replacement.html</loc>
+    <loc>https://sparkdockc.com/services/panel-replacement</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/electrical-troubleshooting.html</loc>
+    <loc>https://sparkdockc.com/services/electrical-troubleshooting</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/electrical-rewiring.html</loc>
+    <loc>https://sparkdockc.com/services/electrical-rewiring</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/surge-protection.html</loc>
+    <loc>https://sparkdockc.com/services/surge-protection</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/ev-charger-installation.html</loc>
+    <loc>https://sparkdockc.com/services/ev-charger-installation</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/emergency-electrician.html</loc>
+    <loc>https://sparkdockc.com/services/emergency-electrician</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <url>
-    <loc>https://sparkdockc.com/services/dedicated-circuits.html</loc>
+    <loc>https://sparkdockc.com/services/dedicated-circuits</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/services/electrical-inspection.html</loc>
+    <loc>https://sparkdockc.com/services/electrical-inspection</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/services/lighting-installation</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service Area -->
+  <url>
+    <loc>https://sparkdockc.com/service-area</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 
   <!-- City Pages — Johnson County KS -->
   <url>
-    <loc>https://sparkdockc.com/areas/olathe-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/olathe-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/overland-park-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/overland-park-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/shawnee-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/shawnee-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/lenexa-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/lenexa-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/leawood-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/leawood-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/prairie-village-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/prairie-village-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/gardner-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/gardner-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/spring-hill-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/spring-hill-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/merriam-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/merriam-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/mission-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/mission-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/de-soto-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/de-soto-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- City Pages — Wyandotte County KS -->
   <url>
-    <loc>https://sparkdockc.com/areas/kansas-city-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/kansas-city-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/bonner-springs-ks.html</loc>
+    <loc>https://sparkdockc.com/areas/bonner-springs-ks</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- City Pages — Jackson County MO -->
   <url>
-    <loc>https://sparkdockc.com/areas/kansas-city-mo.html</loc>
+    <loc>https://sparkdockc.com/areas/kansas-city-mo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/independence-mo.html</loc>
+    <loc>https://sparkdockc.com/areas/independence-mo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/lees-summit-mo.html</loc>
+    <loc>https://sparkdockc.com/areas/lees-summit-mo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/blue-springs-mo.html</loc>
+    <loc>https://sparkdockc.com/areas/blue-springs-mo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/raytown-mo.html</loc>
+    <loc>https://sparkdockc.com/areas/raytown-mo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://sparkdockc.com/areas/grandview-mo.html</loc>
+    <loc>https://sparkdockc.com/areas/grandview-mo</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
