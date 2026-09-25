@@ -432,6 +432,7 @@ p  { font-size: 1.0625rem; line-height: 1.7; }
 
 .hero-title { color: var(--white); margin-bottom: 20px; }
 .hero-title em { color: var(--red); font-style: normal; }
+.hero-eyebrow em { color: var(--white); font-style: normal; }
 
 .hero-subtitle {
   color: var(--silver);
