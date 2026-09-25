@@ -1,5 +1,68 @@
-# Redirect old/alternate domains to canonical domain
+# --- Old/alternate domains -> canonical domain (EXISTING, keep first, unchanged) ---
 https://johomeelectric.com/* https://sparkdockc.com/:splat 301!
 https://www.johomeelectric.com/* https://sparkdockc.com/:splat 301!
 https://sparkdocelectrickc.com/* https://sparkdockc.com/:splat 301!
 https://www.sparkdocelectrickc.com/* https://sparkdockc.com/:splat 301!
+
+# --- Merged pages (source files deleted). "!" so a stale file can never shadow the rule ---
+/services/panel-replacement.html               /services/panel-upgrade                   301!
+/services/panel-replacement                    /services/panel-upgrade                   301!
+/services/sparking-panel.html                  /blog/burning-smell-or-sparks-at-panel    301!
+/services/sparking-panel                       /blog/burning-smell-or-sparks-at-panel    301!
+/services/burning-smell-at-panel.html          /blog/burning-smell-or-sparks-at-panel    301!
+/services/burning-smell-at-panel               /blog/burning-smell-or-sparks-at-panel    301!
+
+# --- Symptom pages moved to /blog/ (source files deleted) ---
+/services/federal-pacific-zinsco-panel.html    /blog/federal-pacific-zinsco-panel        301!
+/services/federal-pacific-zinsco-panel         /blog/federal-pacific-zinsco-panel        301!
+/services/flickering-lights.html               /blog/flickering-lights                   301!
+/services/flickering-lights                    /blog/flickering-lights                   301!
+/services/tripped-breakers.html                /blog/breaker-keeps-tripping              301!
+/services/tripped-breakers                     /blog/breaker-keeps-tripping              301!
+/services/dead-outlets.html                    /blog/outlet-not-working                  301!
+/services/dead-outlets                         /blog/outlet-not-working                  301!
+/services/partial-power-outage.html            /blog/partial-power-outage                301!
+/services/partial-power-outage                 /blog/partial-power-outage                301!
+
+# --- PHASE B: .html -> extensionless for pages whose file still exists (must be forced "!").
+# Tested on Deploy Preview of PR #17: /services/surge-protection.html gave one clean 301 to /services/surge-protection (200, no Location). ---
+/services/panel-upgrade.html                   /services/panel-upgrade                   301!
+/services/ev-charger-installation.html         /services/ev-charger-installation         301!
+/services/electrical-rewiring.html             /services/electrical-rewiring             301!
+/services/emergency-electrician.html           /services/emergency-electrician           301!
+/services/gfci-outlet-repair.html              /services/gfci-outlet-repair              301!
+/services/dedicated-circuits.html              /services/dedicated-circuits              301!
+/services/surge-protection.html                /services/surge-protection                301!
+/services/electrical-inspection.html           /services/electrical-inspection           301!
+/services/electrical-troubleshooting.html      /services/electrical-troubleshooting      301!
+/services/lighting-installation.html           /services/lighting-installation           301!
+/service-area.html                             /service-area                             301!
+/about.html                                    /about                                    301!
+/contact.html                                  /contact                                  301!
+/blog/federal-pacific-zinsco-panel.html        /blog/federal-pacific-zinsco-panel        301!
+/blog/flickering-lights.html                   /blog/flickering-lights                   301!
+/blog/breaker-keeps-tripping.html              /blog/breaker-keeps-tripping              301!
+/blog/outlet-not-working.html                  /blog/outlet-not-working                  301!
+/blog/partial-power-outage.html                /blog/partial-power-outage                301!
+/blog/burning-smell-or-sparks-at-panel.html    /blog/burning-smell-or-sparks-at-panel    301!
+/areas/olathe-ks.html                          /areas/olathe-ks                          301!
+/areas/overland-park-ks.html                   /areas/overland-park-ks                   301!
+/areas/shawnee-ks.html                         /areas/shawnee-ks                         301!
+/areas/lenexa-ks.html                          /areas/lenexa-ks                          301!
+/areas/leawood-ks.html                         /areas/leawood-ks                         301!
+/areas/prairie-village-ks.html                 /areas/prairie-village-ks                 301!
+/areas/gardner-ks.html                         /areas/gardner-ks                         301!
+/areas/spring-hill-ks.html                     /areas/spring-hill-ks                     301!
+/areas/merriam-ks.html                         /areas/merriam-ks                         301!
+/areas/mission-ks.html                         /areas/mission-ks                         301!
+/areas/de-soto-ks.html                         /areas/de-soto-ks                         301!
+/areas/kansas-city-ks.html                     /areas/kansas-city-ks                     301!
+/areas/bonner-springs-ks.html                  /areas/bonner-springs-ks                  301!
+/areas/kansas-city-mo.html                     /areas/kansas-city-mo                     301!
+/areas/independence-mo.html                    /areas/independence-mo                    301!
+/areas/lees-summit-mo.html                     /areas/lees-summit-mo                     301!
+/areas/blue-springs-mo.html                    /areas/blue-springs-mo                    301!
+/areas/raytown-mo.html                         /areas/raytown-mo                         301!
+/areas/grandview-mo.html                       /areas/grandview-mo                       301!
+# DO NOT ADD: "/index.html / 301!", "/blog/index.html /blog/ 301!", or "/*.html /:splat 301!"
+# (index files would loop; Netlify does not parse the *.html splat pattern)

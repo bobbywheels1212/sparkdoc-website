@@ -1,25 +1,29 @@
 # Spark Doc Electric
+Spark Doc Electric LLC. Electrician serving Olathe, KS and the Kansas City metro. Licensed Electrical Contractor, Johnson County KS #2026-0012802.
+Owner & Electrician: Bobby Wheeler. Phone: (913) 390-3780. Email: sparkdocelectric@gmail.com.
+Address: 18504 W 153rd Terrace, Olathe, KS 66062. Hours: Mon-Fri 8:00 AM-5:00 PM, Sat 8:00 AM-12:00 PM, Sun closed.
+Book online: https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d645d2a8fbaf15b4ed1000?v2=true
 
-Spark Doc Electric LLC. Electrician serving Olathe, KS and the Kansas City metro. Licensed Electrical Contractor, Johnson County KS #2026-0012802. Owner & Electrician: Bobby Wheeler. Address: 18504 W 153rd Terrace, Olathe, KS 66062. Hours: Mon-Fri 8:00 AM-5:00 PM, Sat 8:00 AM-12:00 PM, Sun closed. Email: sparkdocelectric@gmail.com. Phone: (913) 390-3780. Book online: https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d645d2a8fbaf15b4ed1000?v2=true
+## Services
+- /services/panel-upgrade : Panel upgrades (often 100A to 200A) and replacement of failed, burned, or obsolete panels, including Federal Pacific and Zinsco. Permits and inspection.
+- /services/electrical-troubleshooting : Electrical troubleshooting and repairs: flickering lights, dead circuits, breakers that will not hold, partial outages.
+- /services/gfci-outlet-repair : GFCI diagnosis, repair, and installs in kitchens, baths, garages, outdoors.
+- /services/ev-charger-installation : Home EV charger installation (Level 2) with dedicated circuit and permits when required.
+- /services/dedicated-circuits : Dedicated circuits for EV chargers, hot tubs, ranges, shops, offices.
+- /services/electrical-rewiring : Full and partial rewiring, knob-and-tube and aluminum.
+- /services/surge-protection : Whole-home surge protection at the panel.
+- /services/electrical-inspection : Electrical safety inspections with written report.
+- /services/lighting-installation : Recessed lighting, ceiling fans, outdoor and smart lighting.
+- /services/emergency-electrician : Call to ask about urgent help for sparking panels, burning smells, and power loss, when available.
 
-## Priority pages
+## Areas
+- /areas/olathe-ks : Olathe hub. - /service-area : All KC metro cities served.
 
-- / : Home. Electrician for panel work, troubleshooting, and EV chargers across Olathe and the KC metro. Call to ask about urgent help.
-- /areas/olathe-ks : Olathe hub. Local service coverage, permits, and common residential electrical work in Olathe.
-- /services/panel-upgrade : Panel upgrade (often 100A to 200A) with permits and inspection.
-- /services/panel-replacement : Replace failed, burned, rusted, or obsolete panels (including Federal Pacific and Zinsco).
-- /services/burning-smell-at-panel : Burning smell or heat odor at the breaker panel. Call or book; sparks covered on sparking-panel.
-- /services/federal-pacific-zinsco-panel : Federal Pacific Stab-Lok and Zinsco panel replacement with permits and inspection.
-- /services/flickering-lights : Flickering lights diagnosis and repair.
-- /services/tripped-breakers : Breakers that keep tripping.
-- /services/partial-power-outage : Half-house / lost-leg outages (including post-storm partial power).
-- /services/dead-outlets : Dead outlet diagnosis and repair.
-- /services/sparking-panel : Sparks, buzzing, or crackling at the panel.
-- /services/electrical-troubleshooting : Diagnose and repair flickering lights, dead circuits, and breaker problems.
-- /services/ev-charger-installation : Level 2 home EV charger installation with dedicated circuit and permits when required.
-- /services/emergency-electrician : Call to ask about urgent help for sparking panels, burning smells, and total power loss.
-- /services/surge-protection : Whole-home surge protection installed at the panel.
-- /services/gfci-outlet-repair : GFCI diagnosis, repair, and code-required installs in wet areas.
-- /services/dedicated-circuits : Dedicated circuits for high-demand appliances, shops, and EV loads.
+## Blog (common problems)
+- /blog/federal-pacific-zinsco-panel - /blog/flickering-lights - /blog/breaker-keeps-tripping
+- /blog/outlet-not-working - /blog/partial-power-outage - /blog/burning-smell-or-sparks-at-panel
+
+## About / Contact
+- /about - /contact
 
 Website: https://sparkdockc.com
