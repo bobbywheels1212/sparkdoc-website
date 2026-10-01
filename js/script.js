@@ -105,3 +105,30 @@
   }
 
 })();
+
+/* GA4: book_click on HouseCall Pro booking links (gtag only exists on the production host) */
+(function () {
+  'use strict';
+
+  function bookLocation(a) {
+    if (a.closest('#site-footer')) return 'footer';
+    if (a.closest('#mobile-nav, #site-header nav')) return 'nav';
+    if (a.closest('#site-header')) return 'header';
+    if (a.closest('#hero, .page-hero')) return 'hero';
+    const sec = a.closest('section, aside');
+    if (sec) return sec.id || sec.classList[0] || 'body';
+    return 'body';
+  }
+
+  document.addEventListener('click', (e) => {
+    const a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || a.hostname !== 'book.housecallpro.com' || typeof window.gtag !== 'function') return;
+    window.gtag('event', 'book_click', {
+      link_url: a.href,
+      link_text: (a.textContent || '').replace(/\s+/g, ' ').trim().slice(0, 100),
+      button_location: bookLocation(a),
+      page_path: location.pathname,
+      transport_type: 'beacon'
+    });
+  }, true);
+})();

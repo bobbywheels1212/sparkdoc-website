@@ -2,6 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- Google tag (gtag.js), production host only -->
+  <script>
+    (function () {
+      var h = location.hostname;
+      if (h !== 'sparkdockc.com' && h !== 'www.sparkdockc.com') return;
+      var s = document.createElement('script');
+      s.async = true;
+      s.src = 'https://www.googletagmanager.com/gtag/js?id=G-473CSHDJG9';
+      document.head.appendChild(s);
+      window.dataLayer = window.dataLayer || [];
+      window.gtag = function () { window.dataLayer.push(arguments); };
+      window.gtag('js', new Date());
+      window.gtag('config', 'G-473CSHDJG9');
+    })();
+  </script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Electrical Wiring &amp; Rewiring in Olathe &amp; KC | Spark Doc</title>
