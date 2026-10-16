@@ -20,6 +20,7 @@ Book online: https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d64
 - /areas/olathe-ks : Olathe hub. - /service-area : All KC metro cities served.
 
 ## Blog (common problems)
+- /blog/lost-power-bathroom-garage-outside : Bathroom, garage, and outdoor outlets dead together. One GFCI feeds the chain. Reset may be in the garage or on a GFCI breaker.
 - /blog/federal-pacific-zinsco-panel - /blog/flickering-lights - /blog/breaker-keeps-tripping
 - /blog/outlet-not-working - /blog/partial-power-outage - /blog/burning-smell-or-sparks-at-panel
 
