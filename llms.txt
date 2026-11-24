@@ -5,6 +5,7 @@ Address: 18504 W 153rd Terrace, Olathe, KS 66062. Hours: Mon-Fri 8:00 AM-5:00 PM
 Book online: https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d645d2a8fbaf15b4ed1000?v2=true
 
 ## Services
+- /services/generator-installation : Generac standby generator installation, portable generator inlet with an interlock kit, and home battery backup. Start with a system assessment.
 - /services/panel-upgrade : Panel upgrades (often 100A to 200A) and replacement of failed, burned, or obsolete panels, including Federal Pacific and Zinsco. Permits and inspection.
 - /services/electrical-troubleshooting : Electrical troubleshooting and repairs: flickering lights, dead circuits, breakers that will not hold, partial outages.
 - /services/gfci-outlet-repair : GFCI diagnosis, repair, and installs in kitchens, baths, garages, outdoors.
@@ -17,12 +18,24 @@ Book online: https://book.housecallpro.com/book/Spark-Doc-Electric/20d3f0cde7d64
 - /services/emergency-electrician : Call to ask about urgent help for sparking panels, burning smells, and power loss, when available.
 
 ## Areas
-- /areas/olathe-ks : Olathe hub. - /service-area : All KC metro cities served.
+- /areas/olathe-ks : Olathe electrician hub. Housing ages, City of Olathe permits, every service, and backup power.
+- /service-area : All KC metro cities served.
 
 ## Blog (common problems)
 - /blog/lost-power-bathroom-garage-outside : Bathroom, garage, and outdoor outlets dead together. One GFCI feeds the chain. Reset may be in the garage or on a GFCI breaker.
-- /blog/federal-pacific-zinsco-panel - /blog/flickering-lights - /blog/breaker-keeps-tripping
-- /blog/outlet-not-working - /blog/partial-power-outage - /blog/burning-smell-or-sparks-at-panel
+- /blog/federal-pacific-zinsco-panel : Short overview of Federal Pacific and Zinsco panels.
+- /blog/federal-pacific-stab-lok-panels : Federal Pacific Stab-Lok risks and why replacement is recommended.
+- /blog/zinsco-panels : Zinsco and Sylvania-Zinsco risks and replacement.
+- /blog/knob-and-tube-wiring : Knob-and-tube wiring, insurance questions, and rewiring.
+- /blog/cloth-insulated-wiring : Cloth-insulated wiring in older homes.
+- /blog/signs-home-needs-panel-upgrade : Signs a home needs a service or panel upgrade.
+- /blog/whole-home-electrical-safety-inspection : What a whole-home electrical safety inspection covers.
+- /blog/electrical-troubleshooting-common-problems : Breakers tripping, flickering lights, dead outlets, warm switches, and when to call.
+- /blog/flickering-lights : Flickering lights.
+- /blog/breaker-keeps-tripping : A breaker that keeps tripping.
+- /blog/outlet-not-working : An outlet that is not working.
+- /blog/partial-power-outage : Partial power outage.
+- /blog/burning-smell-or-sparks-at-panel : Burning smell or sparks at the panel.
 
 ## About / Contact
 - /about - /contact
