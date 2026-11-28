@@ -65,5 +65,13 @@ https://www.sparkdocelectrickc.com/* https://sparkdockc.com/:splat 301!
 /areas/blue-springs-mo.html                    /areas/blue-springs-mo                    301!
 /areas/raytown-mo.html                         /areas/raytown-mo                         301!
 /areas/grandview-mo.html                       /areas/grandview-mo                       301!
+/services/generator-installation.html         /services/generator-installation         301!
+/blog/federal-pacific-stab-lok-panels.html    /blog/federal-pacific-stab-lok-panels    301!
+/blog/zinsco-panels.html                      /blog/zinsco-panels                      301!
+/blog/knob-and-tube-wiring.html               /blog/knob-and-tube-wiring               301!
+/blog/cloth-insulated-wiring.html             /blog/cloth-insulated-wiring             301!
+/blog/signs-home-needs-panel-upgrade.html     /blog/signs-home-needs-panel-upgrade     301!
+/blog/whole-home-electrical-safety-inspection.html /blog/whole-home-electrical-safety-inspection 301!
+/blog/electrical-troubleshooting-common-problems.html /blog/electrical-troubleshooting-common-problems 301!
 # DO NOT ADD: "/index.html / 301!", "/blog/index.html /blog/ 301!", or "/*.html /:splat 301!"
 # (index files would loop; Netlify does not parse the *.html splat pattern)

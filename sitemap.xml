@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://sparkdockc.com/</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- Services -->
   <url>
     <loc>https://sparkdockc.com/services/panel-upgrade</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -24,7 +24,7 @@
   </url>
   <url>
     <loc>https://sparkdockc.com/services/electrical-rewiring</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -54,13 +54,19 @@
   </url>
   <url>
     <loc>https://sparkdockc.com/services/electrical-inspection</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://sparkdockc.com/services/electrical-troubleshooting</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/services/generator-installation</loc>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -74,9 +80,51 @@
   <!-- Blog -->
   <url>
     <loc>https://sparkdockc.com/blog/</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/blog/federal-pacific-stab-lok-panels</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/blog/zinsco-panels</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/blog/knob-and-tube-wiring</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/blog/cloth-insulated-wiring</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/blog/signs-home-needs-panel-upgrade</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/blog/whole-home-electrical-safety-inspection</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://sparkdockc.com/blog/electrical-troubleshooting-common-problems</loc>
+    <lastmod>2026-11-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://sparkdockc.com/blog/lost-power-bathroom-garage-outside</loc>
@@ -92,7 +140,7 @@
   </url>
   <url>
     <loc>https://sparkdockc.com/blog/federal-pacific-zinsco-panel</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -146,7 +194,7 @@
   <!-- City Pages: Johnson County KS -->
   <url>
     <loc>https://sparkdockc.com/areas/olathe-ks</loc>
-    <lastmod>2026-09-24</lastmod>
+    <lastmod>2026-11-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
