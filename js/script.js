@@ -132,3 +132,40 @@
     });
   }, true);
 })();
+
+/* GA4: phone_click on tel: links. One capture listener. Does not preventDefault, so the call still starts. */
+(function () {
+  'use strict';
+
+  var PHONE_NUMBER = '9133903780';
+
+  function phoneLocation(a) {
+    if (a.closest('#site-footer')) return 'footer';
+    if (a.closest('#site-header')) return 'header';
+    if (a.closest('#hero, .page-hero')) return 'hero';
+    if (a.closest('#float-cta, .cta-band, #emergency-cta, .why-cta-box')) return 'cta';
+    if (a.classList.contains('btn') || a.closest('.btn')) return 'cta';
+    return 'body';
+  }
+
+  function digits(href) {
+    return String(href || '').replace(/\D/g, '');
+  }
+
+  document.addEventListener('click', (e) => {
+    const a = e.target && e.target.closest ? e.target.closest('a[href]') : null;
+    if (!a || a.protocol !== 'tel:') return;
+    if (digits(a.getAttribute('href')) !== PHONE_NUMBER) return;
+    if (typeof window.gtag !== 'function') return;
+    try {
+      window.gtag('event', 'phone_click', {
+        link_location: phoneLocation(a),
+        page_path: location.pathname,
+        phone_number: PHONE_NUMBER,
+        transport_type: 'beacon'
+      });
+    } catch (err) {
+      /* never block the tel: navigation */
+    }
+  }, true);
+})();
